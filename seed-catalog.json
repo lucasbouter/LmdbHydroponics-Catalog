@@ -2,7 +2,7 @@
   "$schemaVersion": 1,
   "version": 1,
   "type": "SeedPackageCatalogExport",
-  "exportedAt": "2026-08-26T13:58:21.848Z",
+  "exportedAt": "2026-08-26T15:57:47.894Z",
   "appName": "LmdbHydroponics",
   "seedTypes": [
     {
@@ -21,8 +21,6 @@
         {
           "stageName": "Germination Sprout",
           "stageDescription": "Seed to seed leaves to root runner.",
-          "containerType": "Grow Plug",
-          "transplantRequired": 0,
           "daysInStageMin": 14,
           "daysInStageMax": 20,
           "orderIndex": 0,
@@ -42,8 +40,6 @@
         {
           "stageName": "Seedling",
           "stageDescription": "Three full leaves",
-          "containerType": "Grow Plug",
-          "transplantRequired": 0,
           "daysInStageMin": 7,
           "daysInStageMax": 11,
           "orderIndex": 1,
@@ -52,8 +48,6 @@
         {
           "stageName": "Full Head Growth",
           "stageDescription": "",
-          "containerType": "Grow Plug",
-          "transplantRequired": 0,
           "daysInStageMin": 20,
           "daysInStageMax": 30,
           "orderIndex": 2,
@@ -77,8 +71,6 @@
         {
           "stageName": "Dormancy & Stratification",
           "stageDescription": "The seeds sit isolated on a damp rockwool cube in the refrigerator. The sustained cold and moisture break down the seed's internal germination inhibitors.",
-          "containerType": "Grow Plug",
-          "transplantRequired": 0,
           "daysInStageMin": 14,
           "daysInStageMax": 28,
           "orderIndex": 0,
@@ -87,8 +79,6 @@
         {
           "stageName": "Germination & Sprouting",
           "stageDescription": "The rockwool cube is moved under your Spider Farmer or AGLEX LED fixtures. The intense light and warmth trigger the seed to sprout. Tiny seed leaves (cotyledons) emerge first, and a fragile taproot slowly begins working its way into the rockwool.",
-          "containerType": "Grow Plug",
-          "transplantRequired": 0,
           "daysInStageMin": 14,
           "daysInStageMax": 30,
           "orderIndex": 1,
@@ -97,8 +87,6 @@
         {
           "stageName": "Early Vegetative (Seedling Phase)",
           "stageDescription": "The first jagged \"true leaves\" form. This is when you cull the weaker sprouts, leaving only the strongest plant on the cube. You introduce your MasterBlend nutrient solution here, keeping it dialed back to 300–500 PPM to encourage root penetration without burning the young roots.",
-          "containerType": "Substrate Container",
-          "transplantRequired": 1,
           "daysInStageMin": 25,
           "daysInStageMax": 30,
           "orderIndex": 2,
@@ -107,8 +95,6 @@
         {
           "stageName": "Late Vegetative (Transplant Phase)",
           "stageDescription": "The roots have fully penetrated the rockwool, and the plant is moved into the buffered coco coir and perlite mix in your custom Fusion 360 troughs. The plant focuses entirely on biomass, aggressively dividing its central crown and pushing out new foliage to form a dense, runnerless clump 10 to 12 inches across.",
-          "containerType": "Substrate Container",
-          "transplantRequired": 0,
           "daysInStageMin": 25,
           "daysInStageMax": 30,
           "orderIndex": 3,
@@ -117,8 +103,6 @@
         {
           "stageName": "Flowering (Reproductive Phase)",
           "stageDescription": "The mature plant begins pushing up thin stems holding delicate white flowers with yellow centers. Because they are indoors, the flowers will not turn into berries unless the pollen is physically moved within the blossom.",
-          "containerType": "Substrate Container",
-          "transplantRequired": 0,
           "daysInStageMin": 21,
           "daysInStageMax": 28,
           "orderIndex": 4,
@@ -127,8 +111,6 @@
         {
           "stageName": "Fruiting & Continuous Harvest",
           "stageDescription": "The pollinated flowers drop their white petals, and the yellow center swells into a bright red, aromatic berry. The plant is now in an endless loop—simultaneously growing new leaves, pushing up new flowers, and ripening fruit to support those weekly family harvests.",
-          "containerType": "Substrate Container",
-          "transplantRequired": 0,
           "daysInStageMin": 1,
           "daysInStageMax": 1,
           "orderIndex": 5,
