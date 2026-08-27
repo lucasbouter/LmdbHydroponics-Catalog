@@ -2,7 +2,7 @@
   "$schemaVersion": 1,
   "version": 1,
   "type": "SeedPackageCatalogExport",
-  "exportedAt": "2026-08-27T00:07:33.482Z",
+  "exportedAt": "2026-08-27T00:12:01.741Z",
   "appName": "LmdbHydroponics",
   "seedTypes": [
     {
@@ -11,7 +11,6 @@
       "category": "Looseleaf (Lactuca sativa var. crispa)",
       "harvestMethod": "Whole Head, Loose leaf",
       "brand": "McKenzie",
-      "quantity": "",
       "seedTypeSpacingCm": 20,
       "daysToHarvest": 45,
       "plantingInstructions": "Wet grow cube lay seed on top, light spray",
@@ -61,7 +60,6 @@
       "category": "Alpine / Wild (Fragaria vesca)",
       "harvestMethod": "Individual Berries",
       "brand": "Generic",
-      "quantity": "",
       "seedTypeSpacingCm": 20,
       "daysToHarvest": 120,
       "plantingInstructions": "## Step-by-Step Planting Instructions\n\n### Phase 1: Cold Stratification (Days 1 to 28)\nAlpine seeds require a simulated winter (cold and moisture) to break dormancy. \n1. **Prepare the Media:** Hydrate a single rockwool cube with pH-adjusted water or an ultra-low PPM seedling nutrient solution. Ensure it is moist but not waterlogged.\n2. **Isolate the Seeds:** Using a slightly damp toothpick, pick up 3 dry 'Regina' seeds from the packet. (Store the remaining dry seeds in a cool, dark place).\n3. **Surface Sow:** Wipe the 3 seeds directly onto the top surface of the damp rockwool cube. **Do not bury them and do not use a vermiculite topping**—they require direct light later to sprout.\n4. **Refrigerate:** Place the seeded rockwool cube into a sealed Ziploc bag or airtight container to lock in humidity. Place it in the refrigerator (roughly 35°F to 40°F) for 2 to 4 weeks.",
