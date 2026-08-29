@@ -1,0 +1,127 @@
+{
+  "$schemaVersion": 1,
+  "version": 1,
+  "type": "SystemCatalogExport",
+  "exportedAt": "2026-08-29T02:26:21.347Z",
+  "appName": "LmdbHydroponics",
+  "systems": [
+    {
+      "name": "Grand Rapids - lettuce",
+      "type": "NFT",
+      "farmerObjective": "One head or enough leafs for a week.",
+      "harvestType": "Whole Head",
+      "harvestFullHeadCount": 1,
+      "harvestFullHeadEveryDays": 7,
+      "harvestDayOfWeek": "Mon",
+      "plantingStartDate": "2026-08-27",
+      "plantEveryXDays": 7,
+      "seedTypeName": "Grand Rapids",
+      "seedType": {
+        "name": "Grand Rapids",
+        "type": "Lettuce",
+        "category": "Looseleaf (Lactuca sativa var. crispa)",
+        "harvestMethod": "Whole Head, Loose leaf",
+        "brand": "McKenzie",
+        "seedTypeSpacingCm": 20,
+        "daysToHarvest": 45,
+        "plantingInstructions": "Wet grow cube lay seed on top, light spray",
+        "harvestingInstructions": "{\"Whole Head\":\"1. **Remove Plug from Channel:** Gently lift the grow plug and full lettuce head out of the channel holder.\\n2. **Trim & Inspect Foliage:** Cut off outer lower leaves and discard any bruised or discolored foliage.\\n3. **Ice Water Chill:** Place the harvested lettuce head into a large bowl filled with cold ice water, letting it sit for 15 minutes to crisp the leaves.\\n4. **Spin Dry:** Remove the head from the ice bath and spin thoroughly dry in a salad spinner to eliminate excess surface water.\\n5. **Bag with Paper Towel:** Place the dry head into a food-grade storage bag along with a folded paper towel to absorb ambient moisture.\\n6. **Print & Affix Label:** Print a harvest batch tag displaying the harvest date and best-before date, then affix it to the bag.\\n7. **Seal & Refrigerate:** Securely close the bag and store it immediately in the refrigerator crisper drawer.\",\"Cut and Come Again\":\"1. **Trim Outer Leaves:** Using clean kitchen shears or scissors, cut the outer leaves 1–2 inches above the base, leaving the inner growth point untouched for future harvests.\\n2. **Inspect & Sort:** Discard any yellowing or damaged leaf tips.\\n3. **Crisp in Ice Bath:** Submerge the harvested leaves in a large bowl of clean ice water for 15 minutes to lock in freshness.\\n4. **Spin Dry:** Thoroughly dry the leaves in a salad spinner until no standing droplets remain.\\n5. **Pack for Storage:** Place the loose leaves into a storage bag paired with a clean paper towel to prevent moisture buildup.\\n6. **Apply Harvest Label:** Print and attach a batch tag recording the harvest date and best-before date.\\n7. **Cold Storage:** Close the bag tightly and keep stored in the refrigerator.\"}",
+        "harvestedStorageInstructions": "Store immediately in the refrigerator crisper drawer at 34°F – 38°F (1°C – 3°C) for maximum crispness and shelf life.",
+        "growStages": [
+          {
+            "stageName": "Germination Sprout",
+            "stageDescription": "Seed to seed leaves to root runner.",
+            "daysInStageMin": 14,
+            "daysInStageMax": 20,
+            "orderIndex": 0,
+            "reminders": [
+              {
+                "reminder": "Add vermiculite",
+                "dayInStage": 3,
+                "notifyEnabled": 1
+              },
+              {
+                "reminder": "Move to Full Growth Channel",
+                "dayInStage": 20,
+                "notifyEnabled": 1
+              }
+            ]
+          },
+          {
+            "stageName": "Seedling",
+            "stageDescription": "Three full leaves",
+            "daysInStageMin": 7,
+            "daysInStageMax": 11,
+            "orderIndex": 1,
+            "reminders": []
+          },
+          {
+            "stageName": "Full Head Growth",
+            "stageDescription": "",
+            "daysInStageMin": 20,
+            "daysInStageMax": 30,
+            "orderIndex": 2,
+            "reminders": []
+          }
+        ]
+      },
+      "growStages": [
+        {
+          "stageName": "Germination Sprout",
+          "stageDescription": "Seed to seed leaves to root runner.",
+          "containerType": "Grow Plug",
+          "transplantRequired": false,
+          "daysInStageMin": 14,
+          "daysInStageMax": 20,
+          "orderIndex": 0
+        },
+        {
+          "stageName": "Seedling",
+          "stageDescription": "Three full leaves",
+          "containerType": "Substrate Container",
+          "transplantRequired": false,
+          "daysInStageMin": 7,
+          "daysInStageMax": 11,
+          "orderIndex": 1
+        },
+        {
+          "stageName": "Full Head Growth",
+          "stageDescription": "",
+          "containerType": "Substrate Container",
+          "transplantRequired": false,
+          "daysInStageMin": 20,
+          "daysInStageMax": 30,
+          "orderIndex": 2
+        }
+      ],
+      "stations": [
+        {
+          "name": "Germination Sprout",
+          "purpose": "Seed to seed leaves to root runner.",
+          "orderIndex": 0,
+          "containerType": "Grow Plug",
+          "transplantRequired": false,
+          "notes": "",
+          "channels": [
+            {
+              "channelType": "NFT Germination & Seedling",
+              "label": "1",
+              "lengthCm": 70,
+              "plugCapacity": 14,
+              "seedTypeSpacingCm": null,
+              "withDome": 1,
+              "domeLengthCm": 20,
+              "withHeat": 0,
+              "withWatering": 0,
+              "wateringLengthCm": null
+            }
+          ],
+          "tanks": [],
+          "growLights": [],
+          "initialChannelCount": 1
+        }
+      ],
+      "notes": ""
+    }
+  ]
+}
