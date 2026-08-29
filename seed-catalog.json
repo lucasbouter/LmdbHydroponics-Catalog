@@ -2,7 +2,7 @@
   "$schemaVersion": 1,
   "version": 1,
   "type": "SeedPackageCatalogExport",
-  "exportedAt": "2026-08-28T15:46:35.939Z",
+  "exportedAt": "2026-08-29T22:55:05.088Z",
   "appName": "LmdbHydroponics",
   "seedTypes": [
     {
@@ -21,6 +21,8 @@
         {
           "stageName": "Germination Sprout",
           "stageDescription": "Seed to seed leaves to root runner.",
+          "stageDescriptionShort": "Seed to seed leaves to root runner.",
+          "stageDescriptionLong": "Seed to seed leaves to root runner.",
           "daysInStageMin": 14,
           "daysInStageMax": 20,
           "orderIndex": 0,
@@ -40,6 +42,8 @@
         {
           "stageName": "Seedling",
           "stageDescription": "Three full leaves",
+          "stageDescriptionShort": "Three full leaves",
+          "stageDescriptionLong": "Three full leaves",
           "daysInStageMin": 7,
           "daysInStageMax": 11,
           "orderIndex": 1,
@@ -48,6 +52,8 @@
         {
           "stageName": "Full Head Growth",
           "stageDescription": "",
+          "stageDescriptionShort": "",
+          "stageDescriptionLong": "",
           "daysInStageMin": 20,
           "daysInStageMax": 30,
           "orderIndex": 2,
@@ -71,6 +77,8 @@
         {
           "stageName": "Dormancy & Stratification",
           "stageDescription": "The seeds sit isolated on a damp rockwool cube in the refrigerator. The sustained cold and moisture break down the seed's internal germination inhibitors.",
+          "stageDescriptionShort": "The seeds sit isolated on a damp rockwool cube in",
+          "stageDescriptionLong": "The seeds sit isolated on a damp rockwool cube in the refrigerator. The sustained cold and moisture break down the seed's internal germination inhibitors.",
           "daysInStageMin": 14,
           "daysInStageMax": 28,
           "orderIndex": 0,
@@ -79,6 +87,8 @@
         {
           "stageName": "Germination & Sprouting",
           "stageDescription": "The rockwool cube is moved under your Spider Farmer or AGLEX LED fixtures. The intense light and warmth trigger the seed to sprout. Tiny seed leaves (cotyledons) emerge first, and a fragile taproot slowly begins working its way into the rockwool.",
+          "stageDescriptionShort": "The rockwool cube is moved under your Spider Farme",
+          "stageDescriptionLong": "The rockwool cube is moved under your Spider Farmer or AGLEX LED fixtures. The intense light and warmth trigger the seed to sprout. Tiny seed leaves (cotyledons) emerge first, and a fragile taproot slowly begins working its way into the rockwool.",
           "daysInStageMin": 14,
           "daysInStageMax": 30,
           "orderIndex": 1,
@@ -87,6 +97,8 @@
         {
           "stageName": "Early Vegetative (Seedling Phase)",
           "stageDescription": "The first jagged \"true leaves\" form. This is when you cull the weaker sprouts, leaving only the strongest plant on the cube. You introduce your MasterBlend nutrient solution here, keeping it dialed back to 300–500 PPM to encourage root penetration without burning the young roots.",
+          "stageDescriptionShort": "The first jagged \"true leaves\" form. This is when",
+          "stageDescriptionLong": "The first jagged \"true leaves\" form. This is when you cull the weaker sprouts, leaving only the strongest plant on the cube. You introduce your MasterBlend nutrient solution here, keeping it dialed back to 300–500 PPM to encourage root penetration without burning the young roots.",
           "daysInStageMin": 25,
           "daysInStageMax": 30,
           "orderIndex": 2,
@@ -95,6 +107,8 @@
         {
           "stageName": "Late Vegetative (Transplant Phase)",
           "stageDescription": "The roots have fully penetrated the rockwool, and the plant is moved into the buffered coco coir and perlite mix in your custom Fusion 360 troughs. The plant focuses entirely on biomass, aggressively dividing its central crown and pushing out new foliage to form a dense, runnerless clump 10 to 12 inches across.",
+          "stageDescriptionShort": "The roots have fully penetrated the rockwool, and",
+          "stageDescriptionLong": "The roots have fully penetrated the rockwool, and the plant is moved into the buffered coco coir and perlite mix in your custom Fusion 360 troughs. The plant focuses entirely on biomass, aggressively dividing its central crown and pushing out new foliage to form a dense, runnerless clump 10 to 12 inches across.",
           "daysInStageMin": 25,
           "daysInStageMax": 30,
           "orderIndex": 3,
@@ -103,6 +117,8 @@
         {
           "stageName": "Flowering (Reproductive Phase)",
           "stageDescription": "The mature plant begins pushing up thin stems holding delicate white flowers with yellow centers. Because they are indoors, the flowers will not turn into berries unless the pollen is physically moved within the blossom.",
+          "stageDescriptionShort": "The mature plant begins pushing up thin stems hold",
+          "stageDescriptionLong": "The mature plant begins pushing up thin stems holding delicate white flowers with yellow centers. Because they are indoors, the flowers will not turn into berries unless the pollen is physically moved within the blossom.",
           "daysInStageMin": 21,
           "daysInStageMax": 28,
           "orderIndex": 4,
@@ -111,6 +127,8 @@
         {
           "stageName": "Fruiting & Continuous Harvest",
           "stageDescription": "The pollinated flowers drop their white petals, and the yellow center swells into a bright red, aromatic berry. The plant is now in an endless loop—simultaneously growing new leaves, pushing up new flowers, and ripening fruit to support those weekly family harvests.",
+          "stageDescriptionShort": "The pollinated flowers drop their white petals, an",
+          "stageDescriptionLong": "The pollinated flowers drop their white petals, and the yellow center swells into a bright red, aromatic berry. The plant is now in an endless loop—simultaneously growing new leaves, pushing up new flowers, and ripening fruit to support those weekly family harvests.",
           "daysInStageMin": 1,
           "daysInStageMax": 1,
           "orderIndex": 5,
