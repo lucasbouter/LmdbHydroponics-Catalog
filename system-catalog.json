@@ -2,7 +2,7 @@
   "$schemaVersion": 1,
   "version": 1,
   "type": "SystemCatalogExport",
-  "exportedAt": "2026-08-29T02:28:02.876Z",
+  "exportedAt": "2026-09-04T18:36:12.583Z",
   "appName": "LmdbHydroponics",
   "systems": [
     {
@@ -69,35 +69,50 @@
         {
           "stageName": "Germination Sprout",
           "stageDescription": "Seed to seed leaves to root runner.",
+          "stageDescriptionShort": "Seed to seed leaves to root runner.",
+          "stageDescriptionLong": "Seed to seed leaves to root runner.",
           "containerType": "Grow Plug",
           "transplantRequired": false,
           "daysInStageMin": 14,
           "daysInStageMax": 20,
-          "orderIndex": 0
+          "orderIndex": 0,
+          "targetDripVolumeMinMl": 0,
+          "targetDripVolumeMaxMl": 0,
+          "dripShots": []
         },
         {
           "stageName": "Seedling",
           "stageDescription": "Three full leaves",
+          "stageDescriptionShort": "Three full leaves",
+          "stageDescriptionLong": "Three full leaves",
           "containerType": "Substrate Container",
           "transplantRequired": false,
           "daysInStageMin": 7,
           "daysInStageMax": 11,
-          "orderIndex": 1
+          "orderIndex": 1,
+          "targetDripVolumeMinMl": 0,
+          "targetDripVolumeMaxMl": 0,
+          "dripShots": []
         },
         {
           "stageName": "Full Head Growth",
           "stageDescription": "",
+          "stageDescriptionShort": "",
+          "stageDescriptionLong": "",
           "containerType": "Substrate Container",
           "transplantRequired": false,
           "daysInStageMin": 20,
           "daysInStageMax": 30,
-          "orderIndex": 2
+          "orderIndex": 2,
+          "targetDripVolumeMinMl": 0,
+          "targetDripVolumeMaxMl": 0,
+          "dripShots": []
         }
       ],
       "stations": [
         {
-          "name": "Germination Sprout",
-          "purpose": "Seed to seed leaves to root runner.",
+          "name": "Germination Sprout, Seedling",
+          "purpose": "Seed to seed leaves to root runner.; Three full leaves",
           "orderIndex": 0,
           "containerType": "Grow Plug",
           "transplantRequired": false,
@@ -116,9 +131,110 @@
               "wateringLengthCm": null
             }
           ],
-          "tanks": [],
-          "growLights": [],
+          "tanks": [
+            {
+              "name": "Germination Nutrient A",
+              "type": "Germination Nutrient",
+              "volumeLiters": 10,
+              "desiredPh": 5.8,
+              "desiredEc": 1,
+              "desiredNutrientSolutionMl": null,
+              "tankFillingInstructions": "",
+              "notes": ""
+            },
+            {
+              "name": "Germination Nutrient B",
+              "type": "Germination Nutrient",
+              "volumeLiters": 10,
+              "desiredPh": 5.8,
+              "desiredEc": 1,
+              "desiredNutrientSolutionMl": null,
+              "tankFillingInstructions": "",
+              "notes": ""
+            }
+          ],
+          "growLights": [
+            {
+              "name": "Germination Light",
+              "brandModel": "Spider Farmer 300",
+              "wattage": null,
+              "spectrumType": "Full Spectrum",
+              "ppfdRating": null,
+              "lightHours": null,
+              "dimmerPercent": 100,
+              "notes": ""
+            }
+          ],
           "initialChannelCount": 1
+        },
+        {
+          "name": "Full Head Growth",
+          "purpose": "",
+          "orderIndex": 1,
+          "containerType": "Grow Plug",
+          "transplantRequired": false,
+          "notes": "",
+          "channels": [
+            {
+              "channelType": "NFT Germination & Seedling",
+              "label": "3",
+              "lengthCm": null,
+              "plugCapacity": 0,
+              "seedTypeSpacingCm": null,
+              "withDome": 0,
+              "domeLengthCm": null,
+              "withHeat": 0,
+              "withWatering": 0,
+              "wateringLengthCm": null
+            },
+            {
+              "channelType": "NFT Germination & Seedling",
+              "label": "4",
+              "lengthCm": null,
+              "plugCapacity": 0,
+              "seedTypeSpacingCm": null,
+              "withDome": 0,
+              "domeLengthCm": null,
+              "withHeat": 0,
+              "withWatering": 0,
+              "wateringLengthCm": null
+            }
+          ],
+          "tanks": [
+            {
+              "name": "Nutrient Tank A",
+              "type": "Full Growth Nutrient",
+              "volumeLiters": 30,
+              "desiredPh": 5.8,
+              "desiredEc": 1.8,
+              "desiredNutrientSolutionMl": null,
+              "tankFillingInstructions": "",
+              "notes": ""
+            },
+            {
+              "name": "Nutrient Tank B",
+              "type": "Full Growth Nutrient",
+              "volumeLiters": 30,
+              "desiredPh": 5.8,
+              "desiredEc": 1.8,
+              "desiredNutrientSolutionMl": null,
+              "tankFillingInstructions": "",
+              "notes": ""
+            }
+          ],
+          "growLights": [
+            {
+              "name": "Test light 2",
+              "brandModel": "",
+              "wattage": null,
+              "spectrumType": "Full Spectrum",
+              "ppfdRating": null,
+              "lightHours": null,
+              "dimmerPercent": 100,
+              "notes": ""
+            }
+          ],
+          "initialChannelCount": 2
         }
       ],
       "notes": ""
@@ -200,56 +316,115 @@
         {
           "stageName": "Dormancy & Stratification",
           "stageDescription": "The seeds sit isolated on a damp rockwool cube in the refrigerator. The sustained cold and moisture break down the seed's internal germination inhibitors.",
+          "stageDescriptionShort": "The seeds sit isolated on a damp rockwool cube in",
+          "stageDescriptionLong": "The seeds sit isolated on a damp rockwool cube in the refrigerator. The sustained cold and moisture break down the seed's internal germination inhibitors.",
           "containerType": "Grow Plug",
           "transplantRequired": false,
           "daysInStageMin": 14,
           "daysInStageMax": 28,
-          "orderIndex": 0
+          "orderIndex": 0,
+          "targetDripVolumeMinMl": 0,
+          "targetDripVolumeMaxMl": 0,
+          "dripShots": []
         },
         {
           "stageName": "Germination & Sprouting",
-          "stageDescription": "The rockwool cube is moved under your Spider Farmer or AGLEX LED fixtures. The intense light and warmth trigger the seed to sprout. Tiny seed leaves (cotyledons) emerge first, and a fragile taproot slowly begins working its way into the rockwool.",
-          "containerType": "Substrate Container",
+          "stageDescription": "The rockwool cube is moved under your Spider Farme",
+          "stageDescriptionShort": "The rockwool cube is moved under your Spider Farme",
+          "stageDescriptionLong": "The rockwool cube is moved under your Spider Farmer or AGLEX LED fixtures. The intense light and warmth trigger the seed to sprout. Tiny seed leaves (cotyledons) emerge first, and a fragile taproot slowly begins working its way into the rockwool.",
+          "containerType": "Grow Plug",
           "transplantRequired": false,
           "daysInStageMin": 14,
           "daysInStageMax": 30,
-          "orderIndex": 1
+          "orderIndex": 1,
+          "targetDripVolumeMinMl": 0,
+          "targetDripVolumeMaxMl": 0,
+          "dripShots": []
         },
         {
           "stageName": "Early Vegetative (Seedling Phase)",
-          "stageDescription": "The first jagged \"true leaves\" form. This is when you cull the weaker sprouts, leaving only the strongest plant on the cube. You introduce your MasterBlend nutrient solution here, keeping it dialed back to 300–500 PPM to encourage root penetration without burning the young roots.",
-          "containerType": "Substrate Container",
+          "stageDescription": "The first jagged \"true leaves\" form. This is when",
+          "stageDescriptionShort": "The first jagged \"true leaves\" form. This is when",
+          "stageDescriptionLong": "The first jagged \"true leaves\" form. This is when you cull the weaker sprouts, leaving only the strongest plant on the cube. You introduce your MasterBlend nutrient solution here, keeping it dialed back to 300–500 PPM to encourage root penetration without burning the young roots.",
+          "containerType": "Grow Plug",
           "transplantRequired": false,
           "daysInStageMin": 25,
           "daysInStageMax": 30,
-          "orderIndex": 2
+          "orderIndex": 2,
+          "targetDripVolumeMinMl": 0,
+          "targetDripVolumeMaxMl": 0,
+          "dripShots": []
         },
         {
           "stageName": "Late Vegetative (Transplant Phase)",
-          "stageDescription": "The roots have fully penetrated the rockwool, and the plant is moved into the buffered coco coir and perlite mix in your custom Fusion 360 troughs. The plant focuses entirely on biomass, aggressively dividing its central crown and pushing out new foliage to form a dense, runnerless clump 10 to 12 inches across.",
+          "stageDescription": "The roots have fully penetrated the rockwool, and",
+          "stageDescriptionShort": "The roots have fully penetrated the rockwool, and",
+          "stageDescriptionLong": "The roots have fully penetrated the rockwool, and the plant is moved into the buffered coco coir and perlite mix in your custom Fusion 360 troughs. The plant focuses entirely on biomass, aggressively dividing its central crown and pushing out new foliage to form a dense, runnerless clump 10 to 12 inches across.",
           "containerType": "Substrate Container",
-          "transplantRequired": false,
+          "transplantRequired": true,
           "daysInStageMin": 25,
           "daysInStageMax": 30,
-          "orderIndex": 3
+          "orderIndex": 3,
+          "targetDripVolumeMinMl": 100,
+          "targetDripVolumeMaxMl": 200,
+          "dripShots": [
+            {
+              "shotOrder": 0,
+              "shotName": "Shot 1",
+              "shotTime": "08:00",
+              "durationSeconds": 120,
+              "volumeMl": 44
+            },
+            {
+              "shotOrder": 1,
+              "shotName": "Shot 2",
+              "shotTime": "11:30",
+              "durationSeconds": 120,
+              "volumeMl": 44
+            },
+            {
+              "shotOrder": 2,
+              "shotName": "Shot 3",
+              "shotTime": "14:30",
+              "durationSeconds": 120,
+              "volumeMl": 44
+            },
+            {
+              "shotOrder": 3,
+              "shotName": "Shot 4",
+              "shotTime": "17:30",
+              "durationSeconds": 120,
+              "volumeMl": 44
+            }
+          ]
         },
         {
           "stageName": "Flowering (Reproductive Phase)",
           "stageDescription": "The mature plant begins pushing up thin stems holding delicate white flowers with yellow centers. Because they are indoors, the flowers will not turn into berries unless the pollen is physically moved within the blossom.",
+          "stageDescriptionShort": "The mature plant begins pushing up thin stems hold",
+          "stageDescriptionLong": "The mature plant begins pushing up thin stems holding delicate white flowers with yellow centers. Because they are indoors, the flowers will not turn into berries unless the pollen is physically moved within the blossom.",
           "containerType": "Substrate Container",
           "transplantRequired": false,
           "daysInStageMin": 21,
           "daysInStageMax": 28,
-          "orderIndex": 4
+          "orderIndex": 4,
+          "targetDripVolumeMinMl": 0,
+          "targetDripVolumeMaxMl": 0,
+          "dripShots": []
         },
         {
           "stageName": "Fruiting & Continuous Harvest",
           "stageDescription": "The pollinated flowers drop their white petals, and the yellow center swells into a bright red, aromatic berry. The plant is now in an endless loop—simultaneously growing new leaves, pushing up new flowers, and ripening fruit to support those weekly family harvests.",
+          "stageDescriptionShort": "The pollinated flowers drop their white petals, an",
+          "stageDescriptionLong": "The pollinated flowers drop their white petals, and the yellow center swells into a bright red, aromatic berry. The plant is now in an endless loop—simultaneously growing new leaves, pushing up new flowers, and ripening fruit to support those weekly family harvests.",
           "containerType": "Substrate Container",
           "transplantRequired": false,
           "daysInStageMin": 1,
           "daysInStageMax": 1,
-          "orderIndex": 5
+          "orderIndex": 5,
+          "targetDripVolumeMinMl": 0,
+          "targetDripVolumeMaxMl": 0,
+          "dripShots": []
         }
       ],
       "stations": [
@@ -264,6 +439,31 @@
             {
               "channelType": "NFT Germination & Seedling",
               "label": "2",
+              "lengthCm": null,
+              "plugCapacity": 0,
+              "seedTypeSpacingCm": null,
+              "withDome": 0,
+              "domeLengthCm": null,
+              "withHeat": 0,
+              "withWatering": 0,
+              "wateringLengthCm": null
+            }
+          ],
+          "tanks": [],
+          "growLights": [],
+          "initialChannelCount": 1
+        },
+        {
+          "name": "Early Vegetative (Seedling Phase)",
+          "purpose": "The first jagged \"true leaves\" form. This is when",
+          "orderIndex": 1,
+          "containerType": "Grow Plug",
+          "transplantRequired": false,
+          "notes": "",
+          "channels": [
+            {
+              "channelType": "NFT Germination & Seedling",
+              "label": "5",
               "lengthCm": null,
               "plugCapacity": 0,
               "seedTypeSpacingCm": null,
