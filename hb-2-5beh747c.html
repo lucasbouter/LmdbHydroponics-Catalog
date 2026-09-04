@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harvest Batch Details - Grand Rapids</title>
+  <style>
+    :root {
+      --primary: #10B981;
+      --primary-dark: #059669;
+      --bg: #F9FAFB;
+      --card-bg: #FFFFFF;
+      --text-dark: #1F2937;
+      --text-muted: #6B7280;
+      --border: #E5E7EB;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-dark);
+      padding: 16px;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .header-card {
+      background: linear-gradient(135deg, #059669 0%, #10B981 100%);
+      color: #FFFFFF;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+      margin-bottom: 20px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.25);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+    .crop-title { font-size: 26px; font-weight: 800; margin-bottom: 4px; }
+    .batch-name { font-size: 14px; opacity: 0.9; margin-bottom: 16px; }
+    .dates-row {
+      display: flex;
+      justify-content: space-between;
+      background: rgba(0, 0, 0, 0.12);
+      padding: 12px 16px;
+      border-radius: 12px;
+    }
+    .date-item { display: flex; flex-direction: column; }
+    .date-label { font-size: 11px; opacity: 0.8; text-transform: uppercase; font-weight: 600; }
+    .date-val { font-size: 15px; font-weight: 700; }
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .snapshot-card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 12px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
+    .snapshot-header { display: flex; align-items: center; margin-bottom: 12px; }
+    .snapshot-num {
+      background: #ECFDF5;
+      color: var(--primary-dark);
+      font-weight: 800;
+      font-size: 14px;
+      padding: 6px 10px;
+      border-radius: 8px;
+      margin-right: 12px;
+    }
+    .snapshot-title h3 { font-size: 16px; font-weight: 700; color: var(--text-dark); }
+    .snapshot-tag { font-size: 12px; color: var(--primary-dark); font-weight: 700; font-family: monospace; }
+    .snapshot-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      background: #F9FAFB;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .grid-item { display: flex; flex-direction: column; }
+    .grid-item .label { font-size: 11px; color: var(--text-muted); }
+    .grid-item .val { font-size: 13px; font-weight: 700; color: var(--text-dark); }
+    .location-box {
+      margin-top: 10px;
+      padding: 8px 10px;
+      background: #F0F9FF;
+      border-radius: 6px;
+      font-size: 12px;
+    }
+    .loc-label { color: #0284C7; font-weight: 700; }
+    .loc-val { color: var(--text-dark); }
+    .product-photo-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border);
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .product-photo-img {
+      width: 100%;
+      max-height: 360px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+    .product-photo-caption {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-top: 8px;
+    }
+    .storage-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .storage-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 12px;
+    }
+    .storage-list {
+      padding-left: 20px;
+      margin-bottom: 8px;
+    }
+    .storage-list li {
+      margin-bottom: 8px;
+      font-size: 14px;
+      color: var(--text-dark);
+      line-height: 1.5;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 24px;
+      padding: 16px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header-card">
+      <span class="badge">FRESH HARVEST</span>
+      <h1 class="crop-title">Grand Rapids</h1>
+      <p class="batch-name">Harvest - Grand Rapids (2026-09-04) (harvest_batch:2)</p>
+      
+      <div class="dates-row">
+        <div class="date-item">
+          <span class="date-label">Harvest Date</span>
+          <span class="date-val">2026-09-04</span>
+        </div>
+        <div class="date-item">
+          <span class="date-label">Best Before</span>
+          <span class="date-val">2026-09-14</span>
+        </div>
+      </div>
+    </div>
+
+    
+
+    
+    <div class="storage-card">
+      <h2 class="storage-title">❄️ Harvested Storage & Freshness Care</h2>
+      <ul class="storage-list"><li><strong>Spin Dry:</strong> Ensure harvested leaves/heads are completely dry before packaging.</li><li><strong>Moisture Control:</strong> Place in a sealed food-grade storage bag paired with a clean paper towel to absorb ambient humidity.</li><li><strong>Cold Refrigeration:</strong> Store immediately in the refrigerator crisper drawer at 34°F – 38°F (1°C – 3°C) for maximum crispness and shelf life.</li></ul>
+    </div>
+
+    <div class="section-title">
+      <span>Plant Snapshots at Harvest</span>
+      <span style="font-size: 13px; color: var(--text-muted);">2 items</span>
+    </div>
+
+    
+      <div class="snapshot-card">
+        <div class="snapshot-header">
+          <span class="snapshot-num">#1</span>
+          <div class="snapshot-title">
+            <h3>Grand Rapids #106</h3>
+            <span class="snapshot-tag">plug:106</span>
+          </div>
+        </div>
+        <div class="snapshot-grid">
+          <div class="grid-item">
+            <span class="label">Crop / Variety</span>
+            <span class="val">Grand Rapids</span>
+          </div>
+          <div class="grid-item">
+            <span class="label">Stage at Harvest</span>
+            <span class="val">Seedling</span>
+          </div>
+          <div class="grid-item">
+            <span class="label">Days Grown</span>
+            <span class="val">39 days</span>
+          </div>
+          <div class="grid-item">
+            <span class="label">Planted Date</span>
+            <span class="val">2026-07-26 18:23:25</span>
+          </div>
+        </div>
+        
+          <div class="location-box">
+            <span class="loc-label">Harvest Location:</span>
+            <span class="loc-val">Weekly Grand Rapids Whole Head • 2 • Ardoise Bouter House</span>
+          </div>
+      </div>
+      <div class="snapshot-card">
+        <div class="snapshot-header">
+          <span class="snapshot-num">#2</span>
+          <div class="snapshot-title">
+            <h3>Grand Rapids #109</h3>
+            <span class="snapshot-tag">plug:109</span>
+          </div>
+        </div>
+        <div class="snapshot-grid">
+          <div class="grid-item">
+            <span class="label">Crop / Variety</span>
+            <span class="val">Grand Rapids</span>
+          </div>
+          <div class="grid-item">
+            <span class="label">Stage at Harvest</span>
+            <span class="val">Seedling</span>
+          </div>
+          <div class="grid-item">
+            <span class="label">Days Grown</span>
+            <span class="val">39 days</span>
+          </div>
+          <div class="grid-item">
+            <span class="label">Planted Date</span>
+            <span class="val">2026-07-26 18:23:25</span>
+          </div>
+        </div>
+        
+          <div class="location-box">
+            <span class="loc-label">Harvest Location:</span>
+            <span class="loc-val">Weekly Grand Rapids Whole Head • 3 • Ardoise Bouter House</span>
+          </div>
+      </div>
+
+    <div class="footer">
+      <p>🌱 Hydroponic Farm Harvest Record</p>
+      <p>Batch ID: #2 • Generated for Public Consumer Traceability</p>
+    </div>
+  </div>
+</body>
+</html>
