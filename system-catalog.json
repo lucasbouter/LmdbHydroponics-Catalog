@@ -1,9 +1,0 @@
-{
-  "$schemaVersion": 1,
-  "version": 1,
-  "type": "SystemCatalogExport",
-  "exportedAt": "2026-09-04T18:36:12.583Z",
-  "appName": "LmdbHydroponics",
-  "systems": [
-    ]
-}
